@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edukasi DM Tipe-2</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #e6e6fa, #f8f8ff); /* Ungu soft gradient */
+            color: #4b0082; /* Ungu gelap untuk teks */
+        }
+        header {
+            background-color: #dda0dd; /* Lavender */
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #4b0082;
+        }
+        nav {
+            background-color: #f0e6ff; /* Ungu sangat muda */
+            padding: 10px;
+            text-align: center;
+        }
+        nav button {
+            background-color: #dda0dd;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #4b0082;
+            transition: background-color 0.3s;
+        }
+        nav button:hover {
+            background-color: #ba55d3; /* Ungu lebih gelap */
+        }
+        .section {
+            display: none;
+            padding: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #f8f8ff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .section.active {
+            display: block;
+        }
+        .section h2 {
+            color: #4b0082;
+            border-bottom: 2px solid #dda0dd;
+            padding-bottom: 10px;
+        }
+        .section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .quiz {
+            text-align: center;
+        }
+        .quiz button {
+            background-color: #dda0dd;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 1em;
+            color: #4b0082;
+        }
+        .quiz button:hover {
+            background-color: #ba55d3;
+        }
+        .result {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #dda0dd;
+            color: #4b0082;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Edukasi Diabetes Mellitus Tipe-2</h1>
+        <p>Pelajari dan Mainkan Kuis untuk Kesehatan Anda!</p>
+    </header>
+    <nav>
+        <button onclick="showSection('pengertian')">Pengertian</button>
+        <button onclick="showSection('penyebab')">Penyebab</button>
+        <button onclick="showSection('gejala')">Gejala</button>
+        <button onclick="showSection('pencegahan')">Pencegahan</button>
+        <button onclick="showSection('penanganan')">Penanganan</button>
+        <button onclick="showSection('kuis')">Kuis</button>
+    </nav>
+
+    <div id="pengertian" class="section active">
+        <h2>Pengertian Diabetes Mellitus Tipe-2</h2>
+        <img src="https://via.placeholder.com/600x300/dda0dd/4b0082?text=Ilustrasi+DM+Tipe-2" alt="Ilustrasi DM Tipe-2">
+        <p>Diabetes Mellitus Tipe-2 (DM Tipe-2) adalah kondisi kronis di mana tubuh tidak dapat menggunakan insulin secara efektif. Insulin adalah hormon yang membantu sel-sel tubuh menyerap glukosa (gula) dari darah untuk energi. Pada DM Tipe-2, sel-sel tubuh menjadi resisten terhadap insulin, sehingga kadar gula darah meningkat. Ini berbeda dari DM Tipe-1 yang disebabkan oleh kekurangan insulin total.</p>
+        <p>DM Tipe-2 sering dikaitkan dengan gaya hidup modern dan dapat dicegah atau dikelola dengan perubahan pola hidup. Jika tidak ditangani, dapat menyebabkan komplikasi seperti penyakit jantung, stroke, dan kerusakan ginjal.</p>
+    </div>
+
+    <div id="penyebab" class="section">
+        <h2>Penyebab Diabetes Mellitus Tipe-2</h2>
+        <img src="https://via.placeholder.com/600x300/dda0dd/4b0082?text=Penyebab+DM+Tipe-2" alt="Penyebab DM Tipe-2">
+        <p>Penyebab utama DM Tipe-2 meliputi:</p>
+        <ul>
+            <li><strong>Resistensi Insulin:</strong> Tubuh tidak merespons insulin dengan baik, sering karena kelebihan berat badan.</li>
+            <li><strong>Obesitas:</strong> Lemak berlebih, terutama di perut, meningkatkan risiko.</li>
+            <li><strong>Faktor Genetik:</strong> Riwayat keluarga dengan DM meningkatkan risiko.</li>
+            <li><strong>Gaya Hidup:</strong> Kurang olahraga, diet tinggi gula dan karbohidrat sederhana.</li>
+            <li><strong>Usia:</strong> Risiko meningkat setelah usia 45 tahun.</li>
+            <li><strong>Kondisi Medis:</strong> Seperti sindrom ovarium polikistik atau prediabetes.</li>
+        </ul>
+        <p>Faktor risiko ini dapat dikontrol dengan perubahan gaya hidup.</p>
+    </div>
+
+    <div id="gejala" class="section">
+        <h2>Gejala Diabetes Mellitus Tipe-2</h2>
+        <img src="https://via.placeholder.com/600x300/dda0dd/4b0082?text=Gejala+DM+Tipe-2" alt="Gejala DM Tipe-2">
+        <p>Gejala DM Tipe-2 sering berkembang perlahan dan mungkin tidak terlihat pada awalnya. Gejala umum meliputi:</p>
+        <ul>
+            <li>Haus berlebih (polidipsia).</li>
+            <li>Sering buang air kecil (poliuria).</li>
+            <li>Lapar berlebih (polifagia).</li>
+            <li>Kelelahan dan kelemahan.</li>
+            <li>Penglihatan kabur.</li>
+            <li>Luka yang lambat sembuh.</li>
+            <li>Mati rasa atau kesemutan di tangan/kaki.</li>
+        </ul>
+        <p>Jika Anda mengalami gejala ini, segera konsultasikan dengan dokter untuk pemeriksaan kadar gula darah.</p>
+    </div>
+
+    <div id="pencegahan" class="section">
+        <h2>Pencegahan Diabetes Mellitus Tipe-2</h2>
+        <img src="https://via.placeholder.com/600x300/dda0dd/4b0082?text=Pencegahan+DM+Tipe-2" alt="Pencegahan DM Tipe-2">
+        <p>Pencegahan DM Tipe-2 fokus pada perubahan gaya hidup sehat:</p>
+        <ul>
+            <li><strong>Diet Seimbang:</strong> Konsumsi makanan rendah gula, tinggi serat, seperti sayuran, buah, biji-bijian utuh, dan protein tanpa lemak.</li>
+            <li><strong>Olahraga Teratur:</strong> Lakukan aktivitas fisik minimal 30 menit sehari, seperti jalan kaki atau bersepeda.</li>
+            <li><strong>Kontrol Berat Badan:</strong> Jaga indeks massa tubuh (BMI) ideal untuk mengurangi risiko.</li>
+            <li><strong>Hindari Rokok dan Alkohol:</strong> Kedua hal ini meningkatkan risiko.</li>
+            <li><strong>Pemeriksaan Rutin:</strong> Lakukan tes gula darah jika ada faktor risiko.</li>
+        </ul>
+        <p>Pencegahan dini dapat mencegah perkembangan penyakit.</p>
+    </div>
+
+    <div id="penanganan" class="section">
+        <h2>Penanganan Diabetes Mellitus Tipe-2</h2>
+        <img src="https://via.placeholder.com/600x300/dda0dd/4b0082?text=Penanganan+DM+Tipe-2" alt="Penanganan DM Tipe-2">
+        <p>Penanganan DM Tipe-2 melibatkan kombinasi perubahan gaya hidup dan pengobatan:</p>
+        <ul>
+            <li><strong>Perubahan Gaya Hidup:</strong> Diet rendah karbohidrat, olahraga, dan pengelolaan stres.</li>
+            <li><strong>Obat Oral:</strong> Seperti metformin untuk meningkatkan sensitivitas insulin.</li>
+            <li><strong>Injeksi Insulin:</strong> Jika diperlukan, untuk mengontrol gula darah.</li>
+            <li><strong>Monitoring:</strong> Periksa kadar gula darah secara rutin.</li>
+            <li><strong>Konsultasi Dokter:</strong> Atur dosis obat dan pantau komplikasi.</li>
+        </ul>
+        <p>Tujuan penanganan adalah menjaga kadar gula darah normal untuk mencegah komplikasi.</p>
+    </div>
+
+    <div id="kuis" class="section quiz">
+        <h2>Kuis: Pilih Makanan untuk DM Tipe-2</h2>
+        <p>Jawab soal berikut dengan memilih "Ya" (baik) atau "Tidak" (buruk) untuk penderita DM Tipe-2. Skor akhir akan ditampilkan!</p>
+        <div id="question"></div>
+        <button onclick="answer(true)">Ya</button>
+        <button onclick="answer(false)">Tidak</button>
+        <div id="result" class="result"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Edukasi DM Tipe-2. Dibuat untuk Pendidikan Kesehatan.</p>
+    </footer>
+
+    <script>
+        let currentQuestion = 0;
+        let score = 0;
+        const questions = [
+            { text: "Apakah nasi putih baik untuk penderita DM Tipe-2?", answer: false },
+            { text: "Apakah sayuran hijau seperti bayam baik untuk DM Tipe-2?", answer: true },
+            { text: "Apakah minuman bersoda manis baik untuk DM Tipe-2?", answer: false },
+            { text: "Apakah ikan berlemak seperti salmon baik untuk DM Tipe-2?", answer: true },
+            { text: "Apakah kue cokelat dengan gula tinggi baik untuk DM Tipe-2?", answer: false },
+            { text: "Apakah oatmeal utuh baik untuk DM Tipe-2?", answer: true }
+        ];
+
+        function showSection(sectionId) {
+            document.querySelectorAll('.section').forEach(sec => sec.classList.remove('active'));
+            document.getElementById(sectionId).classList.add('active');
+            if (sectionId === 'kuis') {
+                currentQuestion = 0;
+                score = 0;
+                showQuestion();
+            }
+        }
+
+        function showQuestion() {
+            if (currentQuestion < questions.length) {
+                document.getElementById('question').innerText = questions[currentQuestion].text;
+                document.getElementById('result').innerText = '';
+            } else {
+                document.getElementById('question').innerText = '';
+                document.getElementById('result').innerText = `Kuis selesai! Skor Anda: ${score}/${questions.length}`;
+            }
+        }
+
+        function answer(userAnswer) {
+            if (currentQuestion < questions.length) {
+                if (userAnswer === questions[currentQuestion].answer) {
+                    score++;
+                    document.getElementById('result').innerText = 'Benar!';
+                } else {
+                    document.getElementById('result').innerText = 'Salah!';
+                }
+                currentQuestion++;
+                setTimeout(showQuestion, 1000);
+            }
+        }
+
+        showQuestion(); // Inisialisasi kuis
+    </script>
+</body>
+</html>
